@@ -9,7 +9,25 @@
  */
 
 export default {
-	async fetch(request, env, ctx) {
-		return new Response('Hello World!');
-	},
+    async fetch(request) {
+        const url = new URL(request.url);
+        const targetUrl = `https://public-operation-nap-sg.hoyoverse.com/common/gacha_record/api/getGachaLog` + url.search; // クエリパラメータをそのまま転送
+
+        // APIリクエストを作成
+        const response = await fetch(targetUrl, {
+            method: "GET"
+        });
+
+        // CORSヘッダーを追加
+        return new Response(response.body, {
+            status: response.status,
+            headers: {
+                "Access-Control-Allow-Origin": "https://zzz.tunakaniri.com",
+                "Access-Control-Allow-Methods": "GET, OPTIONS",
+                "Content-Type": "application/json",
+            },
+        });
+    },
 };
+
+
