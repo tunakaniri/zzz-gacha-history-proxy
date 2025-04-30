@@ -65,9 +65,7 @@ export default {
 
 		if (missingParams.length > 0 || extraParams.length > 0) {
 			return new Response(JSON.stringify({
-				error: 'Invalid query parameters',
-				missing: missingParams,
-				unexpected: extraParams
+				error: 'Invalid query parameters'
 			}), {
 				status: 428,
 				headers: corsHeaders
