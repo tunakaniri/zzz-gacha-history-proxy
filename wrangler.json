@@ -1,9 +1,15 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "zzz-gacha-history-proxy",
-  "main": "src/index.js",
-  "compatibility_date": "2025-01-29",
-  "observability": {
-    "enabled": true
-  }
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "zzz-gacha-history-proxy",
+	"main": "src/index.js",
+	"compatibility_date": "2025-01-29",
+	"observability": {
+		"enabled": true
+	},
+	"routes": [
+		{
+			"pattern": "proxy.zzz.tunakaniri.com",
+			"custom_domain": true
+		}
+	]
 }
