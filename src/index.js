@@ -47,7 +47,6 @@ export default {
 			'sign_type',
 			'authkey',
 			'lang',
-			'region',
 			'game_biz',
 			'size',
 			'real_gacha_type',
