@@ -8,7 +8,7 @@
 	},
 	"routes": [
 		{
-			"pattern": "proxy.zzz.tunakaniri.com",
+			"pattern": "proxy-zzz.tunakaniri.com",
 			"custom_domain": true
 		}
 	]
