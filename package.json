@@ -1,17 +1,16 @@
 {
-  "name": "zzz-gacha-history-proxy",
-  "version": "0.0.0",
-  "private": true,
-  "license": "MIT",
-  "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
-    "test": "vitest"
-  },
-  "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.8.71",
-    "vitest": "3.2.4",
-    "wrangler": "^4.33.0"
-  }
+	"name": "zzz-gacha-history-proxy",
+	"version": "0.0.0",
+	"private": true,
+	"license": "MIT",
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.12.5",
+		"wrangler": "^4.59.3"
+	}
 }
